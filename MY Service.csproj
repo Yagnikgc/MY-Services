@@ -1,0 +1,659 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8B2B0C57-B645-4655-A8AA-7B233E2DED0E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MY_Service</RootNamespace>
+    <AssemblyName>MY Service</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About us material\css\animate.min.css" />
+    <Content Include="About us material\css\bootstrap.min.css" />
+    <Content Include="About us material\css\font-awesome.min.css" />
+    <Content Include="About us material\css\icon.css" />
+    <Content Include="About us material\css\image.css" />
+    <Content Include="About us material\css\lightbox.css" />
+    <Content Include="About us material\css\owl.carousel.css" />
+    <Content Include="About us material\css\owl.transitions.css" />
+    <Content Include="About us material\css\preloader.css" />
+    <Content Include="About us material\css\responsive.css" />
+    <Content Include="About us material\css\style.css" />
+    <Content Include="About us material\css\tab.css" />
+    <Content Include="About us material\fonts\et-line.svg" />
+    <Content Include="About us material\fonts\fontawesome-webfont.svg" />
+    <Content Include="About us material\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="About us material\img\service package.png" />
+    <Content Include="About us material\js\bootstrap.js" />
+    <Content Include="About us material\js\bootstrap.min.js" />
+    <Content Include="About us material\js\html5lightbox.js" />
+    <Content Include="About us material\js\jquery-1.11.3.min.js" />
+    <Content Include="About us material\js\jquery.counterup.min.js" />
+    <Content Include="About us material\js\jquery.mixitup.js" />
+    <Content Include="About us material\js\jquery.nav.js" />
+    <Content Include="About us material\js\jquery.scrollUp.js" />
+    <Content Include="About us material\js\jquery.sticky.js" />
+    <Content Include="About us material\js\lightbox.js" />
+    <Content Include="About us material\js\main.js" />
+    <Content Include="About us material\js\min\html5lightbox.min.js" />
+    <Content Include="About us material\js\min\main.min.js" />
+    <Content Include="About us material\js\owl.carousel.min.js" />
+    <Content Include="About us material\js\waypoints.min.js" />
+    <Content Include="About us material\js\wow.min.js" />
+    <Content Include="Admin\Admin.aspx" />
+    <Content Include="Admin\Category.aspx" />
+    <Content Include="Admin\css\my css\bootstrap.min.css" />
+    <Content Include="Admin\css\my css\magnific-popup.css" />
+    <Content Include="Admin\css\my css\normalize.css" />
+    <Content Include="Admin\css\my css\owl.carousel.css" />
+    <Content Include="Admin\css\my css\owl.theme.css" />
+    <Content Include="Admin\css\my css\responsive.css" />
+    <Content Include="Admin\css\my css\style.css" />
+    <Content Include="Admin\css\reset.css" />
+    <Content Include="Admin\css\style.css" />
+    <Content Include="Admin\css_category.css" />
+    <Content Include="Admin\img\cd-arrow.svg" />
+    <Content Include="Admin\img\cd-avatar.png" />
+    <Content Include="Admin\img\cd-logo.svg" />
+    <Content Include="Admin\img\cd-nav-icons.svg" />
+    <Content Include="Admin\img\cd-search.svg" />
+    <Content Include="Admin\img\white user.png" />
+    <Content Include="Admin\index.html" />
+    <Content Include="Admin\js\content.js" />
+    <Content Include="Admin\js\jquery-2.1.4.js" />
+    <Content Include="Admin\js\jquery.menu-aim.js" />
+    <Content Include="Admin\js\main.js" />
+    <Content Include="Admin\js\modernizr.js" />
+    <Content Include="Admin\Reviews.aspx" />
+    <Content Include="Admin\userData.aspx" />
+    <Content Include="Admin\viewCustomers.aspx" />
+    <Content Include="Admin\viewProvider.aspx" />
+    <Content Include="App_Data\MYService.mdf" />
+    <Content Include="App_Data\MYService_log.ldf">
+      <DependentUpon>MYService.mdf</DependentUpon>
+    </Content>
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\Custom-cs.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Images\fbnewsfeed.gif" />
+    <Content Include="Images\loader.gif" />
+    <Content Include="Images\Category\Events and Wedding.png" />
+    <Content Include="Images\Category\Home Services.png" />
+    <Content Include="Images\Category\Personal and More.png" />
+    <Content Include="Images\Category\Repairs.png" />
+    <Content Include="Images\close_icon_black2.png" />
+    <Content Include="Images\Division 3.png" />
+    <Content Include="Images\facebook.png" />
+    <Content Include="Images\giphy-downsized.gif" />
+    <Content Include="Images\google-plus.png" />
+    <Content Include="Images\grow your business.png" />
+    <Content Include="Images\instagram.png" />
+    <Content Include="Images\My Service Logo.png" />
+    <Content Include="Images\pins.png" />
+    <Content Include="Images\sit back relax.png" />
+    <Content Include="Images\stillworkingonit.gif" />
+    <Content Include="Images\subCategory\air-conditioner.png" />
+    <Content Include="Images\subCategory\apple.png" />
+    <Content Include="Images\subCategory\architect.png" />
+    <Content Include="Images\subCategory\Bathroom Cleaning.png" />
+    <Content Include="Images\subCategory\carpenter.png" />
+    <Content Include="Images\subCategory\carpet Cleqaning.png" />
+    <Content Include="Images\subCategory\Chimney %282%29.png" />
+    <Content Include="Images\subCategory\Construction.png" />
+    <Content Include="Images\subCategory\electrician.png" />
+    <Content Include="Images\subCategory\geyser repair.png" />
+    <Content Include="Images\subCategory\gyeser.png" />
+    <Content Include="Images\subCategory\house deep clenaing.png" />
+    <Content Include="Images\subCategory\house painting.png" />
+    <Content Include="Images\subCategory\interior designer.png" />
+    <Content Include="Images\subCategory\kitchen cleaning.png" />
+    <Content Include="Images\subCategory\laptop repair.png" />
+    <Content Include="Images\subCategory\livingroom-black-double-sofa.png" />
+    <Content Include="Images\subCategory\microwave-oven.png" />
+    <Content Include="Images\subCategory\mobile repairs.png" />
+    <Content Include="Images\subCategory\Modular kitchen.png" />
+    <Content Include="Images\subCategory\Packers &amp; Movers.png" />
+    <Content Include="Images\subCategory\Pest Control.png" />
+    <Content Include="Images\subCategory\Plumber.png" />
+    <Content Include="Images\subCategory\refrigerator repair.png" />
+    <Content Include="Images\subCategory\television.png" />
+    <Content Include="Images\subCategory\Vastu Shastra.png" />
+    <Content Include="Images\subCategory\washing-machine.png" />
+    <Content Include="Images\subCategory\Water filter.png" />
+    <Content Include="Images\User.png" />
+    <Content Include="Images\work on your own terms.png" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\npm.js" />
+    <Content Include="login-form\css\RegStyle.css" />
+    <Content Include="login-form\css\style.css" />
+    <Content Include="login-form\js\index.js" />
+    <Content Include="login-form\js\jquery-3.2.1.min.js" />
+    <Content Include="Pages\1\thumbnail-slider3.css" />
+    <Content Include="Pages\1\thumbnail-slider3.js" />
+    <Content Include="Pages\1\thumbnail-slider2.css" />
+    <Content Include="Pages\1\thumbnail-slider2.js" />
+    <Content Include="Pages\1\thumbnail-slider1.css" />
+    <Content Include="Pages\1\thumbnail-slider1.js" />
+    <Content Include="Pages\1\thumbnail-slider.css" />
+    <Content Include="Pages\1\thumbnail-slider.js" />
+    <Content Include="Pages\AboutUs.aspx" />
+    <Content Include="Pages\css1\animate.min.css" />
+    <Content Include="Pages\css1\bootstrap.min.css" />
+    <Content Include="Pages\css1\font-awesome.min.css" />
+    <Content Include="Pages\css1\icon.css" />
+    <Content Include="Pages\css1\image.css" />
+    <Content Include="Pages\css1\lightbox.css" />
+    <Content Include="Pages\css1\owl.carousel.css" />
+    <Content Include="Pages\css1\owl.transitions.css" />
+    <Content Include="Pages\css1\preloader.css" />
+    <Content Include="Pages\css1\responsive.css" />
+    <Content Include="Pages\css1\style.css" />
+    <Content Include="Pages\css1\tab.css" />
+    <Content Include="Pages\css\animate.css" />
+    <Content Include="Pages\css\bootstrap.min.css" />
+    <Content Include="Pages\css\flexslider.css" />
+    <Content Include="Pages\css\owl.carousel.css" />
+    <Content Include="Pages\css\prettyPhoto.css" />
+    <Content Include="Pages\css\style - Copy.css" />
+    <Content Include="Pages\css\style.css" />
+    <Content Include="Pages\Customer.aspx" />
+    <Content Include="Pages\CSS_Home.css" />
+    <Content Include="Pages\Example.css" />
+    <Content Include="Pages\FeedBack.aspx" />
+    <Content Include="Pages\font-awesome.min.css" />
+    <Content Include="Pages\genaratePassword.aspx" />
+    <Content Include="Pages\Home.aspx" />
+    <Content Include="Pages\HomeCleaning.aspx" />
+    <Content Include="Pages\How It Works.aspx" />
+    <Content Include="Pages\Howitworks_style sheet.css" />
+    <Content Include="Pages\images\avatar1.jpg" />
+    <Content Include="Pages\images\avatar2.jpg" />
+    <Content Include="Pages\images\blog\1.jpg" />
+    <Content Include="Pages\images\blog\2.jpg" />
+    <Content Include="Pages\images\blog\3.jpg" />
+    <Content Include="Pages\images\blog\4.jpg" />
+    <Content Include="Pages\images\blog\5.jpg" />
+    <Content Include="Pages\images\breadcrumbs_bg.jpg" />
+    <Content Include="Pages\images\clean_code_bg.jpg" />
+    <Content Include="Pages\images\clients\1.jpg" />
+    <Content Include="Pages\images\clients\2.jpg" />
+    <Content Include="Pages\images\clients\3.jpg" />
+    <Content Include="Pages\images\clients\4.jpg" />
+    <Content Include="Pages\images\clients\5.jpg" />
+    <Content Include="Pages\images\clients\6.jpg" />
+    <Content Include="Pages\images\dark-bl.svg" />
+    <Content Include="Pages\images\dark-br.svg" />
+    <Content Include="Pages\images\dark-tl.svg" />
+    <Content Include="Pages\images\dark-tr.svg" />
+    <Content Include="Pages\images\i1.png" />
+    <Content Include="Pages\images\i2.png" />
+    <Content Include="Pages\images\i3.png" />
+    <Content Include="Pages\images\i4.png" />
+    <Content Include="Pages\images\i5.png" />
+    <Content Include="Pages\images\i6.png" />
+    <Content Include="Pages\images\img1.png" />
+    <Content Include="Pages\images\light-bl.svg" />
+    <Content Include="Pages\images\light-br.svg" />
+    <Content Include="Pages\images\light-tl.svg" />
+    <Content Include="Pages\images\light-tr.svg" />
+    <Content Include="Pages\images\overlay.png" />
+    <Content Include="Pages\images\portfolio\1.jpg" />
+    <Content Include="Pages\images\portfolio\1_2.jpg" />
+    <Content Include="Pages\images\portfolio\1_3.jpg" />
+    <Content Include="Pages\images\portfolio\1_4.jpg" />
+    <Content Include="Pages\images\preloader.gif" />
+    <Content Include="Pages\images\prettyPhoto\default\loader.gif" />
+    <Content Include="Pages\images\prettyPhoto\default\sprite.png" />
+    <Content Include="Pages\images\price_arrow.png" />
+    <Content Include="Pages\images\slider\caption_img1.png" />
+    <Content Include="Pages\images\slider\slide1_bg.jpg" />
+    <Content Include="Pages\images\slider\slide2_bg.jpg" />
+    <Content Include="Pages\images\slider\slide3_bg.jpg" />
+    <Content Include="Pages\images\slider\slide_shadow.png" />
+    <Content Include="Pages\images\team\1.jpg" />
+    <Content Include="Pages\images\team\2.jpg" />
+    <Content Include="Pages\images\team\3.jpg" />
+    <Content Include="Pages\images\team\4.jpg" />
+    <Content Include="Pages\images\team\5.jpg" />
+    <Content Include="Pages\images\team\6.jpg" />
+    <Content Include="Pages\images\team\7.jpg" />
+    <Content Include="Pages\images\team\8.jpg" />
+    <Content Include="Pages\images\team_bg.jpg" />
+    <Content Include="Pages\images\video.png" />
+    <Content Include="Pages\images\zoom.png" />
+    <Content Include="Pages\images\zoom_h.png" />
+    <Content Include="Pages\img1\1.jpg" />
+    <Content Include="Pages\img1\2.jpg" />
+    <Content Include="Pages\img1\Success.jpg" />
+    <Content Include="Pages\img1\team-img3.jpg" />
+    <Content Include="Pages\img\AirBrushMackupIdeas.jpg" />
+    <Content Include="Pages\img\Architect.jpg" />
+    <Content Include="Pages\img\Bartender.jpg" />
+    <Content Include="Pages\img\Bathroom Cleaning.jpg" />
+    <Content Include="Pages\img\Birthday Party Planer.jpg" />
+    <Content Include="Pages\img\BridalMackupArtist.png" />
+    <Content Include="Pages\img\CandidWeddingPhotography.jpeg" />
+    <Content Include="Pages\img\Carpet Cleaning.jpg" />
+    <Content Include="Pages\img\Construction &amp; Renovation.jpg" />
+    <Content Include="Pages\img\DJ.jpg" />
+    <Content Include="Pages\img\DulhanMackupPhotos.jpg" />
+    <Content Include="Pages\img\Full Home Cleaning.jpg" />
+    <Content Include="Pages\img\HDMackupIdeas.jpg" />
+    <Content Include="Pages\img\Home Tutor.jpg" />
+    <Content Include="Pages\img\House Painters.jpg" />
+    <Content Include="Pages\img\Interior Designer.jpg" />
+    <Content Include="Pages\img\Kitchen Cleaning.jpg" />
+    <Content Include="Pages\img\Live Musician.jpg" />
+    <Content Include="Pages\img\Mehendi Artists.jpg" />
+    <Content Include="Pages\img\MehendiDesignIdeas.jpg" />
+    <Content Include="Pages\img\Metromonial Services.png" />
+    <Content Include="Pages\img\Packers &amp; Movers.jpg" />
+    <Content Include="Pages\img\Party Mackup Artist.jpg" />
+    <Content Include="Pages\img\Pest Control.jpg" />
+    <Content Include="Pages\img\Plumber.jpg" />
+    <Content Include="Pages\img\Pre-Wedding Shoot.jpg" />
+    <Content Include="Pages\img\Pre-WeddingPhotograthy.jpg" />
+    <Content Include="Pages\img\Salon at Home.jpg" />
+    <Content Include="Pages\img\Sofa Clening.jpg" />
+    <Content Include="Pages\img\SouthIndianWeddingPhotography.jpeg" />
+    <Content Include="Pages\img\Spa at Home.jpg" />
+    <Content Include="Pages\img\TraditionalPhotography.jpg" />
+    <Content Include="Pages\img\Web Designer &amp; Developer.jpg" />
+    <Content Include="Pages\img\Wedding Caterers.jpg" />
+    <Content Include="Pages\img\Wedding Choreographer.jpg" />
+    <Content Include="Pages\img\Wedding Florists &amp; Decorators.jpg" />
+    <Content Include="Pages\img\Wedding Photographer.jpeg" />
+    <Content Include="Pages\img\WeddingPlaner.png" />
+    <Content Include="Pages\img\Yoga Trainer at Home.jpg" />
+    <Content Include="Pages\js1\bootstrap.js" />
+    <Content Include="Pages\js1\bootstrap.min.js" />
+    <Content Include="Pages\js1\html5lightbox.js" />
+    <Content Include="Pages\js1\jquery-1.11.3.min.js" />
+    <Content Include="Pages\js1\jquery.counterup.min.js" />
+    <Content Include="Pages\js1\jquery.mixitup.js" />
+    <Content Include="Pages\js1\jquery.nav.js" />
+    <Content Include="Pages\js1\jquery.scrollUp.js" />
+    <Content Include="Pages\js1\jquery.sticky.js" />
+    <Content Include="Pages\js1\lightbox.js" />
+    <Content Include="Pages\js1\main.js" />
+    <Content Include="Pages\js1\min\html5lightbox.min.js" />
+    <Content Include="Pages\js1\min\main.min.js" />
+    <Content Include="Pages\js1\owl.carousel.min.js" />
+    <Content Include="Pages\js1\waypoints.min.js" />
+    <Content Include="Pages\js1\wow.min.js" />
+    <Content Include="Pages\js\animate.js" />
+    <Content Include="Pages\js\bootstrap.min.js" />
+    <Content Include="Pages\js\ie\backgroundsize.min.htc" />
+    <Content Include="Pages\js\ie\html5shiv.js" />
+    <Content Include="Pages\js\ie\respond.min.js" />
+    <Content Include="Pages\js\jquery.BlackAndWhite.js" />
+    <Content Include="Pages\js\jquery.dropotron.min.js" />
+    <Content Include="Pages\js\jquery.flexslider-min.js" />
+    <Content Include="Pages\js\jquery.min.js" />
+    <Content Include="Pages\js\jquery.nicescroll.min.js" />
+    <Content Include="Pages\js\jquery.prettyPhoto.js" />
+    <Content Include="Pages\js\jquery.scrollgress.min.js" />
+    <Content Include="Pages\js\jquery.scrolly.min.js" />
+    <Content Include="Pages\js\main.js" />
+    <Content Include="Pages\js\myscript.js" />
+    <Content Include="Pages\js\owl.carousel.js" />
+    <Content Include="Pages\js\skel.min.js" />
+    <Content Include="Pages\js\superfish.min.js" />
+    <Content Include="Admin\js\typed.js" />
+    <Content Include="Pages\js\util.js" />
+    <Content Include="Pages\LogIn.aspx" />
+    <Content Include="Pages\main.css" />
+    <Content Include="Pages\Manage Service.aspx" />
+    <Content Include="Pages\Provider.aspx" />
+    <Content Include="Pages\ProviderDashBoard.aspx" />
+    <Content Include="Pages\ProvideService.aspx" />
+    <Content Include="Pages\Registration.aspx" />
+    <Content Include="Pages\The Team.aspx" />
+    <Content Include="Pages\WaitForApproval.aspx" />
+    <Content Include="Pages\workInUnderProcess.aspx" />
+    <Content Include="Providers material\css\animate.css" />
+    <Content Include="Providers material\css\bootstrap.css" />
+    <Content Include="Providers material\css\cardio.css" />
+    <Content Include="Providers material\css\et-icons.css" />
+    <Content Include="Providers material\css\normalize.css" />
+    <Content Include="Providers material\css\owl.css" />
+    <Content Include="Providers material\js\bootstrap.min.js" />
+    <Content Include="Providers material\js\jquery-1.11.1.min.js" />
+    <Content Include="Providers material\js\jquery.onepagenav.js" />
+    <Content Include="Providers material\js\main.js" />
+    <Content Include="Providers material\js\owl.carousel.min.js" />
+    <Content Include="Providers material\js\tooltip.js" />
+    <Content Include="Providers material\js\typed.js" />
+    <Content Include="Providers material\js\typewriter.js" />
+    <Content Include="Providers material\js\wow.min.js" />
+    <Content Include="Slider\images\arc-tn.jpg" />
+    <Content Include="Slider\images\arc.jpg" />
+    <Content Include="Slider\images\Img3-tn.jpg" />
+    <Content Include="Slider\images\Img3.jpg" />
+    <Content Include="Slider\images\Img4-tn.jpg" />
+    <Content Include="Slider\images\Img4.jpg" />
+    <Content Include="Slider\images\mix-tn.jpg" />
+    <Content Include="Slider\images\mix.jpg" />
+    <Content Include="Slider\images\Untitled-1-tn.jpg" />
+    <Content Include="Slider\images\Untitled-1.jpg" />
+    <Content Include="Slider\images\Untitled-1dasd-tn.jpg" />
+    <Content Include="Slider\images\Untitled-1dasd.jpg" />
+    <Content Include="Slider\images\Untitled-2-tn.jpg" />
+    <Content Include="Slider\images\Untitled-2.jpg" />
+    <Content Include="Slider\Slider Images\arc.jpg" />
+    <Content Include="Slider\Slider Images\Img3.jpg" />
+    <Content Include="Slider\Slider Images\Img4.jpg" />
+    <Content Include="Slider\Slider Images\mix.jpg" />
+    <Content Include="Slider\Slider Images\Untitled-1.jpg" />
+    <Content Include="Slider\Slider Images\Untitled-1dasd.jpg" />
+    <Content Include="Slider\Slider Images\Untitled-2.jpg" />
+    <Content Include="Slider\sliderengine\amazingslider-1.css" />
+    <Content Include="Slider\sliderengine\amazingslider.js" />
+    <Content Include="Slider\sliderengine\carouselarrows-32-32-0.png" />
+    <Content Include="Slider\sliderengine\froogaloop2.min.js" />
+    <Content Include="Slider\sliderengine\html5boxplayer.swf" />
+    <Content Include="Slider\sliderengine\html5boxplayer_fullscreen.png" />
+    <Content Include="Slider\sliderengine\html5boxplayer_hd.png" />
+    <Content Include="Slider\sliderengine\html5boxplayer_playpause.png" />
+    <Content Include="Slider\sliderengine\html5boxplayer_playvideo.png" />
+    <Content Include="Slider\sliderengine\html5boxplayer_volume.png" />
+    <Content Include="Slider\sliderengine\initslider-1.js" />
+    <Content Include="Slider\sliderengine\jquery.js" />
+    <Content Include="Slider\sliderengine\lightbox-close.png" />
+    <Content Include="Slider\sliderengine\lightbox-loading.gif" />
+    <Content Include="Slider\sliderengine\lightbox-navnext.png" />
+    <Content Include="Slider\sliderengine\lightbox-navprev.png" />
+    <Content Include="Slider\sliderengine\lightbox-next.png" />
+    <Content Include="Slider\sliderengine\lightbox-pause.png" />
+    <Content Include="Slider\sliderengine\lightbox-play.png" />
+    <Content Include="Slider\sliderengine\lightbox-playvideo.png" />
+    <Content Include="Slider\sliderengine\lightbox-prev.png" />
+    <Content Include="Slider\sliderengine\navarrows-28-28-0.png" />
+    <Content Include="Slider\sliderengine\navbuttonbgimage-28-28-0.png" />
+    <Content Include="Slider\sliderengine\navplaypause-28-28-0.png" />
+    <Content Include="Slider\sliderengine\playvideo-64-64-0.png" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Category.aspx.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Reviews.aspx.cs">
+      <DependentUpon>Reviews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Reviews.aspx.designer.cs">
+      <DependentUpon>Reviews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\userData.aspx.cs">
+      <DependentUpon>userData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\userData.aspx.designer.cs">
+      <DependentUpon>userData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\viewCustomers.aspx.cs">
+      <DependentUpon>viewCustomers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\viewCustomers.aspx.designer.cs">
+      <DependentUpon>viewCustomers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\viewProvider.aspx.cs">
+      <DependentUpon>viewProvider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\viewProvider.aspx.designer.cs">
+      <DependentUpon>viewProvider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Customer.aspx.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Customer.aspx.designer.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FeedBack.aspx.cs">
+      <DependentUpon>FeedBack.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\FeedBack.aspx.designer.cs">
+      <DependentUpon>FeedBack.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\genaratePassword.aspx.cs">
+      <DependentUpon>genaratePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\genaratePassword.aspx.designer.cs">
+      <DependentUpon>genaratePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HomeCleaning.aspx.cs">
+      <DependentUpon>HomeCleaning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\HomeCleaning.aspx.designer.cs">
+      <DependentUpon>HomeCleaning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\How It Works.aspx.cs">
+      <DependentUpon>How It Works.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\How It Works.aspx.designer.cs">
+      <DependentUpon>How It Works.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LogIn.aspx.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\LogIn.aspx.designer.cs">
+      <DependentUpon>LogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Manage Service.aspx.cs">
+      <DependentUpon>Manage Service.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Manage Service.aspx.designer.cs">
+      <DependentUpon>Manage Service.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Provider.aspx.cs">
+      <DependentUpon>Provider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Provider.aspx.designer.cs">
+      <DependentUpon>Provider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ProviderDashBoard.aspx.cs">
+      <DependentUpon>ProviderDashBoard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ProviderDashBoard.aspx.designer.cs">
+      <DependentUpon>ProviderDashBoard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ProvideService.aspx.cs">
+      <DependentUpon>ProvideService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\ProvideService.aspx.designer.cs">
+      <DependentUpon>ProvideService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\The Team.aspx.cs">
+      <DependentUpon>The Team.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\The Team.aspx.designer.cs">
+      <DependentUpon>The Team.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\WaitForApproval.aspx.cs">
+      <DependentUpon>WaitForApproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\WaitForApproval.aspx.designer.cs">
+      <DependentUpon>WaitForApproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\workInUnderProcess.aspx.cs">
+      <DependentUpon>workInUnderProcess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\workInUnderProcess.aspx.designer.cs">
+      <DependentUpon>workInUnderProcess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap-theme.min.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="login-form\scss\style.scss" />
+    <Content Include="Admin\js\.DS_Store" />
+    <Content Include="Admin\js\README-menu-aim.md" />
+    <Content Include="Admin\partials\_layout.scss" />
+    <Content Include="Admin\partials\_mixins.scss" />
+    <Content Include="Admin\partials\_variables.scss" />
+    <Content Include="About us material\fonts\et-line.eot" />
+    <Content Include="About us material\fonts\et-line.ttf" />
+    <Content Include="About us material\fonts\et-line.woff" />
+    <Content Include="About us material\fonts\fontawesome-webfont.eot" />
+    <Content Include="About us material\fonts\fontawesome-webfont.ttf" />
+    <Content Include="About us material\fonts\fontawesome-webfont.woff" />
+    <Content Include="About us material\fonts\fontawesome-webfont.woff2" />
+    <Content Include="About us material\fonts\FontAwesome.otf" />
+    <Content Include="About us material\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="About us material\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="About us material\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="About us material\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="About us material\fonts\weblysleekuil.ttf" />
+    <Content Include="About us material\fonts\weblysleekuisb.ttf" />
+    <Content Include="Providers material\css\bootstrap.css.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\images\works\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>17579</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:17574/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

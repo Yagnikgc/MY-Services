@@ -1,0 +1,59 @@
+﻿body {
+}
+.div1 {
+  background-image: -moz-linear-gradient( 90deg, rgb(30,94,102) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(30,94,102) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(30,94,102) 0%, rgb(255,255,255) 100%);
+  margin-left:-15px;
+  margin-right:-15px;
+  width: auto;
+}
+.font_effect {
+    font-size: 40px;
+    font-size: 3.5vw;
+    color:white;
+
+}
+.linkforecolor:hover{
+    color:#1e5e66;
+}
+.linkforecolor {
+    color:white;
+}
+
+.div2 {
+  
+ 
+  left:0px;
+  top:30%;
+
+  
+ 
+}
+.ab {
+    
+   
+   float:left;
+}
+.pinfonts {
+     font-size: 20px;
+    font-size: 2.5vw;   
+    color:#1e5e66;
+}
+.div3 {
+  
+ 
+  left:0px;
+  top:120%;
+  width: 100%;
+ 
+}
+.div4 {
+  background-color:gray;
+
+  left:0px;
+  top:160%;
+  width: auto;
+  
+ 
+}

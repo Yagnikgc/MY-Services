@@ -1,0 +1,87 @@
+﻿body {
+}
+.zoomin {
+            text-align: center;
+        }
+            .zoomin img {
+                height: 140px;
+                width: 140px;
+                -webkit-transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -ms-transition: all 0.5s ease;
+                transition: all 0.5s ease;
+            }
+                .zoomin img:hover {
+                    width: 170px;
+                    height: 170px;
+                    box-shadow:0 0 5px 5px;
+                }
+.headBar {
+    height:25px;
+    font-size:20px;
+    padding-left:20px;
+}
+.SubCatName {
+    padding:0 0 20px 20px;
+    font-weight:bold;
+    font-underline:false;
+}
+    .SubCatName:hover {
+        color:#009688;
+        text-decoration:none;
+    }
+h1 {
+            color:#1e5e66;
+        }
+        table {
+            border-collapse:collapse;
+        }
+        th {
+            text-align:center;
+            padding:15px;
+            background-color:#1e5e66;
+            font-size:20px;
+            color:white;
+        }
+        td {
+            padding:15px;
+        }
+        tr:nth-child(even) {
+            background-color:#afdade;
+        }
+        tr:nth-child(odd) {
+            background-color:#609096;
+        }
+        tr:hover {
+            background-color:#f5f5f5;
+        }
+body {
+            font: normal 0.9em Arial;
+            color: #222;
+        }
+
+        header {
+            display: block;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+            header a, header span {
+                display: inline-block;
+                padding: 4px 8px;
+                margin-right: 10px;
+                border: 2px solid #000;
+                background: #DDD;
+                color: #000;
+                text-decoration: none;
+                text-align: center;
+                height: 20px;
+            }
+
+            header span {
+                background: white;
+            }
+
+        a {
+            color: #1155CC;
+        }
